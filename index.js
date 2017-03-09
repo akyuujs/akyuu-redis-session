@@ -17,8 +17,17 @@ class RedisSession {
 
     plug() {
         this.akyuu.use(session({
-            store: new RedisStore(this.options),
-            secret: this.options.secret
+            store: new RedisStore(this.options.conn),
+
+            cookie: this.options.cookie,
+            genid: this.options.genid,
+            name: this.options.name,
+            proxy: this.options.proxy,
+            resave: this.options.resave,
+            rolling: this.options.rolling,
+            saveUninitialized: this.options.saveUninitialized,
+            secret: this.options.secret,
+            unset: this.options.unset
         }));
     }
 }

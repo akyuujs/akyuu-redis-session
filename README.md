@@ -18,11 +18,17 @@ Install this package and add configuration section below to your redisSession pl
 {
     enabled: true,
     secret: "SECRET",
-    host: "redis-server",
-    port: PORT,
+    name: "NAME",
 
-    // All other parameters can be found on https://github.com/tj/connect-redis#options
+    // All other session parameters can be found on https://github.com/expressjs/session#options
+
+    conn: {
+        host: "redis-server",
+        port: PORT,
+
+        // All other redis parameters can be found on https://github.com/tj/connect-redis#options
+    }
 }
 ```
 
-> You may get full parameters list on [https://github.com/tj/connect-redis#options](https://github.com/tj/connect-redis#options).
+> You may get full parameters list on [https://github.com/tj/connect-redis#options](https://github.com/tj/connect-redis#options) and [https://github.com/expressjs/session#options](https://github.com/expressjs/session#options).
