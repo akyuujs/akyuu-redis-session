@@ -1,0 +1,28 @@
+{
+  "name": "akyuu-redis-session",
+  "version": "1.0.0",
+  "description": "Session stored in redis based on Akyuu.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akyuujs/akyuu-redis-session.git"
+  },
+  "keywords": [
+    "redis",
+    "akyuu",
+    "session"
+  ],
+  "author": "XadillaX <i@2333.moe>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akyuujs/akyuu-redis-session/issues"
+  },
+  "homepage": "https://github.com/akyuujs/akyuu-redis-session#readme",
+  "dependencies": {
+    "connect-redis": "^3.2.0",
+    "express-session": "^1.15.1"
+  }
+}
